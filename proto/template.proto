@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package template;
+
+service template {
+    rpc HelloWorld(HelloWorldRequest) returns (HelloWorldResponse) {}
+}
+
+message User {
+    string firstName = 1;
+    string lastName = 2;
+}
+
+message HelloWorldRequest {
+    string firstName = 1;
+    string lastName = 2;
+}
+
+message HelloWorldResponse {
+    User user = 1;
+}
