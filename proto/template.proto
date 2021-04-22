@@ -19,3 +19,8 @@ message HelloWorldRequest {
 message HelloWorldResponse {
     User user = 1;
 }
+
+message TemplateObject {
+    string firstName = 1;
+    string lastName = 2;
+}
